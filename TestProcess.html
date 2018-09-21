@@ -1,0 +1,92 @@
+<div class="row">
+	<select ng-model="mode" ng-options="item.display for item in options track by item.value"></select>
+</div>
+				
+<div ng-switch on="mode.value">
+	<div ng-switch-when="ques1" class="panel text-center col-lg-offset-2 col-lg-8">	
+		<div class="panel-heading text-justify">{{items.ques1.title}}</div>
+			<div class="panel-body text-left">
+				<div class="radio">
+					<label><input type="radio" name="answer1" value="{{items.ques1.no1.answer}}" ng-click=add($event) checked>{{items.ques1.no1.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer1" value="{{items.ques1.no2.answer}}" ng-click=add($event)>{{items.ques1.no2.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer1" value="{{items.ques1.no3.answer}}" ng-click=add($event)>{{items.ques1.no3.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer1" value="{{items.ques1.no4.answer}}" ng-click=add($event)>{{items.ques1.no4.title}}</label>
+				</div>
+			</div>
+		</div>
+		<div ng-switch-when="ques2" class="panel text-center col-lg-offset-2 col-lg-8">	
+			<div class="panel-heading text-justify">{{items.ques2.title}}</div>
+			<div class="panel-body text-left">
+				<div class="radio">
+					<label><input type="radio" name="answer2" value=" {{items.ques2.no1.answer}}" ng-click=add($event) checked>{{items.ques2.no1.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer2" value=" {{items.ques2.no2.answer}}" ng-click=add($event)>{{items.ques2.no2.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer2" value=" {{items.ques2.no3.answer}}" ng-click=add($event)>{{items.ques2.no3.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer2" value=" {{items.ques2.no4.answer}}" ng-click=add($event)>{{items.ques2.no4.title}}</label>
+				</div>
+			</div>
+		</div>
+		<div ng-switch-when="ques3" class="panel text-center col-lg-offset-2 col-lg-8">	
+			<div class="panel-heading text-justify">{{items.ques3.title}}</div>
+			<div class="panel-body text-left">
+				<div class="radio">
+					<label><input type="radio" name="answer3" value=" {{items.ques3.no1.answer}}" ng-click=add($event) checked>{{items.ques3.no1.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer3" value=" {{items.ques3.no2.answer}}" ng-click=add($event)>{{items.ques3.no2.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer3" value=" {{items.ques3.no3.answer}}" ng-click=add($event)>{{items.ques3.no3.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer3" value=" {{items.ques3.no4.answer}}" ng-click=add($event)>{{items.ques3.no4.title}}</label>
+				</div>
+			</div>
+		</div>
+		<div ng-switch-when="ques4" class="panel text-center col-lg-offset-2 col-lg-8">	
+			<div class="panel-heading text-justify">{{items.ques4.title}}</div>
+			<div class="panel-body text-left">
+				<div class="radio">
+					<label><input type="radio" name="answer4" value=" {{items.ques4.no1.answer}}" ng-click=add($event) checked>{{items.ques4.no1.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer4" value=" {{items.ques4.no2.answer}}" ng-click=add($event)>{{items.ques4.no2.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer4" value=" {{items.ques4.no3.answer}}" ng-click=add($event)>{{items.ques4.no3.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer4" value=" {{items.ques4.no4.answer}}" ng-click=add($event)>{{items.ques4.no4.title}}</label>
+				</div>
+			</div>
+		</div>
+		<div ng-switch-when="ques5" class="panel text-center col-lg-offset-2 col-lg-8">	
+			<div class="panel-heading text-justify">{{items.ques5.title}}</div>
+			<div class="panel-body text-left">
+				<div class="radio">
+					<label><input type="radio" name="answer5" value=" {{items.ques5.no1.answer}}" ng-click=add($event) checked>{{items.ques5.no1.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer5" value=" {{items.ques5.no2.answer}}" ng-click=add($event)>{{items.ques5.no2.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer5" value=" {{items.ques5.no3.answer}}" ng-click=add($event)>{{items.ques5.no3.title}}</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="answer5" value=" {{items.ques5.no4.answer}}" ng-click=add($event)>{{items.ques5.no4.title}}</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

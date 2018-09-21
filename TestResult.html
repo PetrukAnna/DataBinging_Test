@@ -1,0 +1,12 @@
+<div class="panel text-center col-lg-offset-2 col-lg-8">	
+	<div class="panel-heading text-justify h4">Результат</div>
+	<div class="panel-body text-left">
+		<p><b>Дата сдачи:</b> {{now}}</p>
+		<p><b>Количество правильных ответов:</b> {{total()}} из 5</p>
+		<!-- <p>{{userAnswers}}</p> -->
+		<!-- <div ng-repeat="(key,value) in userAnswers">
+			<p>{{key}} - {{value}}</p>
+		</div> -->
+		<p><b>Номера неправильных ответов:</b> {{wrong()}}</p>
+	</div>
+</div>

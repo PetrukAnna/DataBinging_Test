@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="TestApp">
+<head>
+	<title> Test </title>
+	<meta charset="utf-8">
+	<script src="Library/angular.js"></script>
+    <link href="Library/bootstrap.css" rel="stylesheet"/>
+    <link href="Library/bootstrap-theme.css" rel="stylesheet"/>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="TestAppCtrl" style="background-color: lightgray;">
+	<div class="container text-center">
+		<div class="panel text-center panel-primary col-lg-offset-2 col-lg-8" style="border: none;">	
+			<div class="panel-heading">JavaScript Advance (CSS и JavaScript)</div>
+			<div class="panel-body" class="text-center">
+				<ng-include src="url"></ng-include>
+			</div>
+			<div class="panel-footer">
+				<button class="btn btn-primary btn-sm" ng-click="showResult()"> Завершить тест </button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
